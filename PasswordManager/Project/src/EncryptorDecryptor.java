@@ -13,18 +13,18 @@ public class EncryptorDecryptor {
         Random random = new Random();
 
         for (int i = 0; i < input.length(); i++) {
-            encrypted += input.charAt(i);
+            encrypted += input.charAt(i); //takes one cahraacter from user input ans saves it to the encrypted variable
 
             char randomChar = (char) (random.nextInt(26) + 'a');
-            encrypted += randomChar;
+            encrypted += randomChar;    //the generated random character is added in front of the previous character, which was taken fromuser input
         }
         return encrypted;
-    }
-
+    }//encryption function ka end
+    
+    // Function to remove random characters, from between the characters from the encrypted password
     public static String decryptionMethod(String input) {
         String decrypted = "";
-        //here we have used i+=2 to skip the random characters that have been
-        //added after each character in the password
+        
         for (int i = 0; i < input.length(); i += 2) {
             decrypted += input.charAt(i);
         }
