@@ -5,8 +5,8 @@ public class changeCredentials {
         Scanner sc = new Scanner(System.in);
 
         boolean check = false;
+        
         //check if there is any data
-
         boolean checkEmpty = Main.credentials.isEmpty();
         //if the Data is empty then show message
         if(checkEmpty) {
