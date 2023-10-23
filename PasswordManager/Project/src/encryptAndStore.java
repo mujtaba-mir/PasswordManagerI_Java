@@ -10,7 +10,7 @@ public class encryptAndStore extends EncryptorDecryptor{
         int number = sc.nextInt();
 
         for (int i = 1; i <= number; i++) {
-            try {
+           
                 // Take userID
                 System.out.println("Enter the user ID no: " + i);
                 String userid = sc.next();
@@ -26,16 +26,13 @@ public class encryptAndStore extends EncryptorDecryptor{
                 System.out.println("Enter the password for " + userid);
                 String password = sc.next();
 
-                // Encrypt the password using a method from RandomString class (Replace with your actual encryption method)
+                // Encrypt the password using a method from EncryptorDecryptor class
                 EncryptorDecryptor pwd = new EncryptorDecryptor();
                 String encryptedPassword = pwd.encryptionMethod(password);
 
                 System.out.println("---Password saved---\n");
-                Main.credentials.put(userid, encryptedPassword);
+                Main.credentials.put(userid, encryptedPassword); //save the updated password
 
-            } catch (Exception e) {
-                System.out.println("An error occurred: " + e.getMessage());
-            }
         } // for-loop
     }
 }
