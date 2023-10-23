@@ -14,8 +14,8 @@ public class deleteCredentials {
                 //warn user
                 System.out.println("W-A-R-N-I-N-G!!\nDoing this will remove all ID's and passwords permanently. Do you wish to countinue?\nY/N");
                 String yesNo = sc.nextLine();
+                
                 if(yesNo.equalsIgnoreCase("y")){
-
                     boolean checkEmpty = Main.credentials.isEmpty() ;
                     //check if the map is already empty, if yes then tell user,
                     if(checkEmpty){
@@ -39,7 +39,6 @@ public class deleteCredentials {
 
 
                         //read the input from user
-
                         String input = sc.nextLine();
 
                         //check if the entered id exist, if yes then delete
