@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Enter Your Choice: ");
             int choice = sc.nextInt();
 
-
+            // take user input from menu
             switch (choice) {
                 case 1:
                     System.out.println("Taking You to The Credential Adding Page!");
@@ -39,7 +39,7 @@ public class Main {
                     break;
                 default:
                     System.out.println("No Such Option");
-            } //switch case
+            } //switch case ends here
 
             System.out.println("Do you want to return to MAIN MENU ?\n Y / N");
             select = sc.next();
