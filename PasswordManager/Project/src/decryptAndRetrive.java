@@ -31,6 +31,7 @@ public class decryptAndRetrive extends encryptAndStore{
                 //decrypting the password using method from EncryptorDecryptor class
                 EncryptorDecryptor pwd = new EncryptorDecryptor();
                 String decryptedPassword = pwd.decryptionMethod(encryptedPassword);
+                
                 System.out.println("The password  for " + whichId + " is: " + decryptedPassword);
             } else {
                 System.out.println(" Sorry!! No such ID Exist\n Try Again\n");
